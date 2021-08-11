@@ -1,0 +1,17 @@
+<div class="modal_menu" id="modalMenu">
+    <span id="close" class="close">X</span>
+    <div class="modal_list">
+        <ul>
+            <li><a  href="#gallery">Gallery</a></li>
+            <li><a  href="#contact">Contact us</a></li>
+            <li><a  href="#categories">Categories</a></li>
+            <li><a  href="#social">Social media</a></li>
+            <% if(user) {%>
+                <li><a  href="/gallery">Recipes</a></li>
+                <li><a  href="/logout">Exit</a></li>
+            <% } else { %>
+                <li><a  href="/signup">Sign up</a></li>
+            <% } %>
+        </ul>
+    </div>
+</div> 

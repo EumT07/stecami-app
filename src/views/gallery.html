@@ -1,0 +1,94 @@
+<%- include("./partials/head.html") %>
+<%- include("./partials/navbar.html") %>
+<body>
+    <div class="modal_menu" id="modalMenu">
+        <span id="close" class="close">X</span>
+        <div class="modal_list">
+            <ul>
+                <li><a  href="/">Home</a></li>
+                <li><a  href="/profile">Profile</a></li>
+                <li><a  href="#social">Social media</a></li>
+                <li><a  href="/logout">Exit</a></li>
+                
+            </ul>
+        </div>
+    </div> 
+    <main>   
+        <!--Home chages-->
+        <section class="gallery_home" id="up">
+            <div class="container_home">
+                <div class="searching" id="filter">
+                    <input type="text" name="search" id="search" placeholder="Search..">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="content__infor_home">
+                    <div class="content__gallery_home">
+                        <div class="content__img">
+                            <img  class="imgGallery" src="/img/chocolate (1).jpg" alt="">
+                        </div>
+                        <div class="img__infor">
+                            <h2 class="h2modal">Chocolate Cake</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident maxime magnam repellendus similique?</p>
+                            <!--
+                                <div class="seeMore" >More</div>
+                            -->
+                        </div>
+                    </div>
+                    <div class="content__gallery_home">
+                        <div class="content__img">
+                            <img class="imgGallery" src="/img/tresleche.jpg" alt="">
+                        </div>
+                        <div class="img__infor">
+                            <h2 class="h2modal">Thre milk Cake</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident maxime magnam repellendus similique?</p>
+                        </div>
+                    </div>
+                    <div class="content__gallery_home">
+                        <div class="content__img">
+                            <img class="imgGallery" src="/img/piña.jpg" alt="">
+                        </div>
+                        <div class="img__infor">
+                            <h2 class="h2modal">PainApple Cake</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident maxime magnam repellendus similique?</p>
+                        </div>
+                    </div>
+                    <div class="content__gallery_home">
+                        <div class="content__img">
+                            <img class="imgGallery" src="/img/pan.jpg" alt="">
+                        </div>
+                        <div class="img__infor">
+                            <h2 class="h2modal">Bread Cake</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident maxime magnam repellendus similique?</p>
+                        </div>
+                    </div>
+                    <div class="content__gallery_home">
+                        <div class="content__img">
+                            <img class="imgGallery" src="/img/quesillo.jpg" alt="">
+                        </div>
+                        <div class="img__infor">
+                            <h2 class="h2modal">Quesillo</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident maxime magnam repellendus similique?</p>
+                        </div>
+                    </div>
+                    <div class="content__gallery_home">
+                        <div class="content__img">
+                            <img class="imgGallery" src="/img/fresa.jpg" alt="">
+                        </div>
+                        <div class="img__infor">
+                            <h2 class="h2modal">Strawberry Cake</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident maxime magnam repellendus similique?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!--Modal-->
+        <div class="recipe__modal" id="recipeModal">
+            <span id="closeRecipe" class="close_recipe">X</span>
+            <img class="img_modal" id="imgModal" src="" alt="">
+        </div>
+
+    </main>
+    <%- include("./partials/footer.html") %>
+    <%- include("./partials/bodypart.html") %>

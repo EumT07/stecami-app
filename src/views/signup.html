@@ -1,0 +1,48 @@
+<%- include("./partials/head.html") %>
+<title><%= title %></title>
+<body>
+<%- include("./partials/navbar.html") %>
+<section class="container">
+    <div class="content-img-up">
+    </div>
+    <div class="content-form">
+        <h2>Sign<span>u</span>p</h2>
+        <% if(signupMessage) { %>
+            <div class="signMessage">
+                <%= signupMessage %>
+            </div>
+        <% } %>
+        <form action="/signup" method="POST">
+            <label class="label__Form" for="username" >Full Name
+                <input type="text" name="fullname" >
+            </label>
+            <label class="label__Form" for="username" placeholder="Insert Email" >Email
+                <input type="email" name="email" >
+            </label>
+            <label class="label__Form" for="username" placeholder="Insert Password">Password
+                <input type="password" name="password" >
+            </label>
+            <label class="label__Form" for="username">Country
+                <input type="text" name="country" >
+            </label>
+            <label class="label__Form" for="remember">Remember me
+                <input type="checkbox" name="remember" >
+            </label>
+            <div>
+                <button type="submit" value="Sign up">Sign Up</button>
+            </div>
+            <div class="inputBx">
+                <p>Do You have an account? <a href="/signin">Sign in</a></p>
+            </div>
+        </form>
+    </div>
+</section>
+<div class="modal_menu" id="modalMenu">
+    <span id="close" class="close">X</span>
+    <div class="modal_list">
+        <ul>
+            <li><a  href="/">Home</a></li>
+        </ul>
+    </div>
+</div> 
+<%- include("./partials/bodypart.html") %>

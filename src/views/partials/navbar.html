@@ -1,0 +1,17 @@
+<header >
+    <div class="content__logo" >
+        <a href="/"><img src="/img/stecami_taste_taza.png" alt=""></a>
+    </div>
+    <nav class="navegation">
+        <ul class="content_nav">
+            <% if(user) { %> 
+                <li><a href="/profile"><%= user.fullname %></a></li>
+            <% } else {  %>
+            <li><a href="/signin"><i class="fas fa-sign-in-alt"> Sign in</i></a></li>
+            <% } %>
+        </ul>
+    </nav>
+    <div class="menu" id="menu">
+        <i class="fas fa-bars"></i>
+    </div>
+</header>

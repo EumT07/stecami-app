@@ -1,0 +1,32 @@
+<%- include("./partials/head.html") %>
+<%- include("./partials/navbar.html") %>
+<div class="modal_menu" id="modalMenu">
+    <span id="close" class="close">X</span>
+    <div class="modal_list">
+        <ul>
+            <li><a  href="/">Home</a></li>
+            <li><a  href="/gallery">Recipes</a></li>
+            <li><a  href="/logout">Exit</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+<section class="profile__background">
+    <div class="container__Profile">
+        <div class="content__backimg">
+            <img src="/img/background.jpeg" alt="background">
+        </div>
+        <div class="img_profile">
+            <img src="/img/profile.png" alt="profilepicture">
+        </div>
+        <div class="content__infor_profile">
+            <h1><%= user.fullname %></h1>
+            <p><%= user.email %></p>
+            <p><%= user.country %></p>
+        </div>
+    </div>
+</section>
+
+<%- include("./partials/menu.html") %>
+<%- include("./partials/bodypart.html") %>

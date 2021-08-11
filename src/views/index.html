@@ -1,0 +1,105 @@
+<%- include("./partials/head.html") %>
+<body>
+    <%- include("./partials/navbar.html") %>
+<main>
+    <section class="main_contentimg" id="up"></section>
+        <!--GAllery   https://www.emiliodeik.cl/receta/torta-chocolate-perfecta/ -->
+        <% if(!user) { %>
+            <div class="start">
+                <h1>Are you new?</h1>
+                <a href="/signup">Sign up</a>
+            </div>
+        <% } %>
+        <%- include("./partials/menu.html") %>
+    <div class="vertical__container">
+        <ul class="vertical_socialmedia">
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div class="arrow_down">
+        <a href="#gallery"><i class="fas fa-arrow-circle-down"></i></a>
+    </div>
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2>Cake Recipes</h2>
+            <div class="content__infor">
+                <div class="content__gallery">
+                    <div class="content__img">
+                        <img src="/img/chocolate (1).jpg" alt="">
+                    </div>
+                    <div class="img__infor">
+                        <h2>Chocolate Cake</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident maxime magnam repellendus similique?</p>
+                    </div>
+                </div>
+                <div class="content__gallery">
+                    <div class="content__img">
+                        <img src="/img/tresleche.jpg" alt="">
+                    </div>
+                    <div class="img__infor">
+                        <h2>Thre milk Cake</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident maxime magnam repellendus similique?</p>
+                    </div>
+                </div>
+                <div class="content__gallery">
+                    <div class="content__img">
+                        <img src="/img/piña.jpg" alt="">
+                    </div>
+                    <div class="img__infor">
+                        <h2>PainApple Cake</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident maxime magnam repellendus similique?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+            <% if(user) { %>
+        <% } %>
+    -->
+        <div class="seemore">
+            <a href="/gallery">See more</a>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="logo">
+            <img src="/img/stecami_taste_taza.png"  alt="Logo">
+        </div>
+        <div class="contact__form">
+            <h2>Contact us</h2>
+            <form action="mailto:twom07sokiu@gmail.com" method="get" enctype="text/plain">
+                <input type="text" name="fullName" id="" placeholder="Full Name">
+                <input type="number" name="number" id="" placeholder="Number">
+                <input type="email" name="email" id=""
+                placeholder="Email">
+                <textarea name="textarea" id="" cols="30" rows="10" placeholder="Write your message"></textarea>
+                <div>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="container__baners" id="categories">
+        <div>
+            <i class="fas fa-cookie-bite"></i>
+            <p>Cookies</p>
+        </div>
+        <div>
+            <i class="fas fa-birthday-cake"></i>
+            <p>Birht-Cakes</p>
+        </div>
+        <div>
+            <i class="fas fa-ice-cream"></i>
+            <p>Ice scream</p>
+        </div>
+        <div>
+            <i class="fas fa-candy-cane"></i>
+            <p>Candies</p>
+        </div>
+    </section>
+    <!--Baners-->
+</main>
+    <%- include("./partials/footer.html") %>
+    <%- include("./partials/bodypart.html") %>
